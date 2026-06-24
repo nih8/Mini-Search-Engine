@@ -1,52 +1,46 @@
 # 🧭 Mini Search Engine (C++)
 
-This project implements a mini text-search engine using core C++ data structures.
-It supports Word Search, Phrase Search, and Autocomplete across multiple .txt files.
+A mini text search engine built using C++ data structures and algorithms.
+It supports Word Search, Phrase Search, and Trie-based Autocomplete across multiple text documents.
 
 ## Features
 
-Indexes all words from multiple files
+- Document indexing using inverted index
+- Stores word positions for efficient retrieval
+- Frequency-based word ranking
+- Exact phrase matching using positional indexing
+- Trie-based autocomplete
+- Text normalization (lowercase + punctuation removal)
+- Persistent index storage
 
-Stores word positions for fast lookup
+## How It Works
 
-Word search sorted by highest frequency
-
-Phrase search with exact sequential matching
-
-Trie-based autocomplete for prefixes
-
- ## How It Works
-
-Load text files
-
-Normalize: lowercase + remove punctuation
-
-Skip stopwords
-
-Build global index:
-
+1. Load text documents
+2. Normalize and process words
+3. Build inverted index:
 unordered_map<string, unordered_map<string, vector<int>>>
 
 
-### Insert words into Trie
+4. Perform search operations:
+   - Word search
+   - Phrase search
+   - Autocomplete
 
-Provide search operations via menu
+## Word Search
 
- ### Word Search
+Retrieves documents containing a word and ranks them based on occurrence frequency.
 
-Directly fetch frequency from index and sort files by occurrences.
+## Phrase Search
 
-### Phrase Search
+Uses stored word positions to verify exact sequential phrase matches.
 
-Check if phrase words appear sequentially using position matching.
+## Autocomplete
 
-### Autocomplete
+Uses Trie data structure to return matching word prefixes.
 
-Trie returns all words matching a given prefix.
+## How to Run
 
- A simple BFS-based bipartite check is included to validate graph-like relationships dynamically built during processing.
-This ensures stable linking of words/files and prevents invalid structural patterns.
+```bash
+g++ src/main.cpp src/search_engine.cpp src/storage.cpp src/ranker.cpp -Iinclude -std=c++17 -o search
 
-🔹 How to Run
-g++ main.cpp -o search
 ./search
