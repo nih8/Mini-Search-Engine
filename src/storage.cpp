@@ -1,70 +1,66 @@
 #include "storage.h"
+#include <bits/stdc++.h>
+
 #include <fstream>
 #include <iostream>
 #include <sstream>
-using namespace std;
+
 
 void Storage::saveIndex(
     unordered_map<
         string,
-        unordered_map<string, vector<int>>
+        unordered_map<string,vector<int>>
     >& index,
 
     string filename
 )
 {
 
+
     ofstream file(filename);
 
 
+
     if(!file)
-    {
-        cout<<"Unable to open storage file\n";
         return;
-    }
 
 
 
-    for(auto &wordEntry : index)
+
+    for(auto &word:index)
     {
 
-        string word = wordEntry.first;
 
-
-        file << word << "\n";
+        file<<word.first<<"\n";
 
 
 
-        for(auto &docEntry : wordEntry.second)
+        for(auto &doc:word.second)
         {
 
-            file << docEntry.first << " ";
+            file<<doc.first<<" ";
+            file<<doc.second.size()<<" ";
 
 
-            file << docEntry.second.size() << " ";
-
-
-            for(int pos : docEntry.second)
+            for(int pos:doc.second)
             {
-
-                file << pos << " ";
-
+                file<<pos<<" ";
             }
 
 
-            file << "\n";
+            file<<"\n";
 
         }
 
 
-        file << "#\n";
+
+        file<<"#\n";
+
 
     }
 
 
-
     file.close();
-
 
 }
 
@@ -76,19 +72,19 @@ void Storage::saveIndex(
 
 
 
+
 unordered_map<
 string,
-unordered_map<string, vector<int>>
+unordered_map<string,vector<int>>
 >
-Storage::loadIndex(
-    string filename
-)
+
+Storage::loadIndex(string filename)
 {
 
 
     unordered_map<
-        string,
-        unordered_map<string, vector<int>>
+    string,
+    unordered_map<string,vector<int>>
     >
     index;
 
@@ -99,10 +95,8 @@ Storage::loadIndex(
 
 
     if(!file)
-    {
-        cout<<"No saved index found\n";
         return index;
-    }
+
 
 
 
@@ -112,11 +106,6 @@ Storage::loadIndex(
 
     while(getline(file,word))
     {
-
-
-        if(word=="")
-            continue;
-
 
 
         if(word=="#")
@@ -141,14 +130,11 @@ Storage::loadIndex(
 
 
 
-            string document;
+            string doc;
+            int size;
 
 
-            int count;
-
-
-
-            ss >> document >> count;
+            ss>>doc>>size;
 
 
 
@@ -156,32 +142,24 @@ Storage::loadIndex(
 
 
 
-            for(int i=0;i<count;i++)
+            for(int i=0;i<size;i++)
             {
 
-                int pos;
+                int p;
 
-                ss >> pos;
+                ss>>p;
 
-
-                positions.push_back(pos);
+                positions.push_back(p);
 
             }
 
 
 
-            index[word][document] =
-                positions;
-
+            index[word][doc]=positions;
 
         }
 
-
     }
-
-
-
-    file.close();
 
 
 

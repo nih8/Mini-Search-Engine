@@ -1,19 +1,20 @@
 #ifndef SEARCH_ENGINE_H
 #define SEARCH_ENGINE_H
-
-
 #include <bits/stdc++.h>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include <string>
+#include <unordered_map>
 
 using namespace std;
 
-
-// Trie is present inside search.cpp
 class Trie;
 
 
-
-class SearchEngine {
-
+class SearchEngine
+{
 
 private:
 
@@ -23,11 +24,52 @@ private:
     > global_index;
 
 
+    unordered_map<string,bool> stop_words;
+
+
     Trie* trie;
 
 
-    unordered_set<string> non_imp_words;
 
+public:
+
+    SearchEngine();
+
+
+    ~SearchEngine();
+
+
+
+    void loadDocuments(string path);
+
+
+
+    vector<pair<string,double>>
+    searchWord(string query);
+
+
+
+    vector<pair<string,double>>
+    searchPhrase(string phrase);
+
+
+
+    void autocomplete(string prefix);
+
+
+
+    unordered_map<
+        string,
+        unordered_map<string, vector<int>>
+    >& getIndex();
+
+
+
+    vector<string> getDocuments();
+
+
+
+private:
 
 
     string normalize(string word);
@@ -40,53 +82,13 @@ private:
     );
 
 
+
     int phraseMatchCount(
         string phrase,
         string filename
     );
 
 
-
-public:
-
-
-    SearchEngine();
-
-
-
-    void loadDocuments(
-        string path
-    );
-
-
-
-    vector<pair<string,int>> searchWord(
-        string word
-    );
-
-
-
-    vector<pair<string,int>> searchPhrase(
-        string phrase
-    );
-
-
-
-    void autocomplete(
-        string word
-    );
-
-
-
-    unordered_map<
-        string,
-        unordered_map<string, vector<int>>
-    >& getIndex();
-
-
-
 };
-
-
 
 #endif

@@ -1,77 +1,32 @@
 #include "search_engine.h"
-
-#include <filesystem>
-#include <fstream>
-#include <sstream>
-#include <cctype>
+#include <bits/stdc++.h>
+#include "preprocessing.h"
+#include "ranker.h"
 
 #include "../src/search.cpp"
+
+#include <filesystem>
+#include <algorithm>
 
 
 namespace fs = std::filesystem;
 
 
 
-SearchEngine::SearchEngine(){
+SearchEngine::SearchEngine()
+{
 
     trie = new Trie();
 
 
-    non_imp_words = {
-
-        "a","an","the","and","or","but",
-        "if","about","against",
-        "between","into","through",
-        "during","before","after",
-        "above","below","to","from",
-        "up","down","in","out",
-        "on","off","over","under",
-        "again","then","once",
-        "here","there","when",
-        "where","why","how",
-        "all","any","both",
-        "each","few","more",
-        "most","other","some",
-        "such","no","nor",
-        "not","only","own",
-        "same","so","than",
-        "too","very","can",
-        "will","just","is",
-        "am","are","was",
-        "were","be","been",
-        "being","have","has",
-        "had","having",
-        "do","does","did",
-        "this","that",
-        "these","those"
-
-    };
-
 }
 
 
 
+SearchEngine::~SearchEngine()
+{
 
-
-string SearchEngine::normalize(string word){
-
-
-    for(char &c : word)
-        c = tolower(c);
-
-
-
-    while(!word.empty() && ispunct(word.back()))
-        word.pop_back();
-
-
-
-    while(!word.empty() && ispunct(word.front()))
-        word.erase(word.begin());
-
-
-
-    return word;
+    delete trie;
 
 }
 
@@ -80,36 +35,12 @@ string SearchEngine::normalize(string word){
 
 
 
+string SearchEngine::normalize(string word)
+{
 
-bool SearchEngine::binarySearch(
-    vector<int>& positions,
-    int target
-){
+    Preprocessor p;
 
-    int left = 0;
-    int right = positions.size()-1;
-
-
-    while(left <= right){
-
-        int mid = (left+right)/2;
-
-
-        if(positions[mid] == target)
-            return true;
-
-
-        else if(positions[mid] < target)
-            left = mid+1;
-
-
-        else
-            right = mid-1;
-
-    }
-
-
-    return false;
+    return p.normalize(word);
 
 }
 
@@ -120,8 +51,8 @@ bool SearchEngine::binarySearch(
 
 
 
-
-void SearchEngine::loadDocuments(string path){
+void SearchEngine::loadDocuments(string path)
+{
 
 
     for(auto &entry : fs::directory_iterator(path))
@@ -133,7 +64,8 @@ void SearchEngine::loadDocuments(string path){
 
 
 
-        string filename = entry.path().string();
+        string filename =
+        entry.path().string();
 
 
 
@@ -146,7 +78,9 @@ void SearchEngine::loadDocuments(string path){
 
 
 
+
         string line;
+
         string word;
 
 
@@ -157,12 +91,14 @@ void SearchEngine::loadDocuments(string path){
         while(getline(file,line))
         {
 
+
             stringstream ss(line);
 
 
 
             while(ss >> word)
             {
+
 
                 word = normalize(word);
 
@@ -173,8 +109,9 @@ void SearchEngine::loadDocuments(string path){
 
 
 
+
                 global_index[word][filename]
-                    .push_back(position);
+                .push_back(position);
 
 
 
@@ -184,14 +121,18 @@ void SearchEngine::loadDocuments(string path){
 
                 position++;
 
+
             }
+
 
         }
 
 
         file.close();
 
+
     }
+
 
 }
 
@@ -203,38 +144,100 @@ void SearchEngine::loadDocuments(string path){
 
 
 
-vector<pair<string,int>>
-SearchEngine::searchWord(string word)
+vector<pair<string,double>>
+SearchEngine::searchWord(string query)
 {
 
 
-    word = normalize(word);
+    query = normalize(query);
 
 
 
-    vector<pair<string,int>> result;
+    vector<string> words;
+
+    words.push_back(query);
 
 
 
-    if(global_index.find(word)
-        == global_index.end())
+    Ranker ranker;
+
+
+
+    return ranker.rankDocuments(
+        words,
+        global_index
+    );
+
+}
+
+
+
+
+
+
+
+
+
+vector<pair<string,double>>
+SearchEngine::searchPhrase(string phrase)
+{
+
+
+    vector<pair<string,double>> result;
+
+
+
+    vector<string> documents;
+
+
+
+    for(auto &word:global_index)
     {
-        return result;
+
+        for(auto &doc:word.second)
+        {
+
+            if(find(
+                documents.begin(),
+                documents.end(),
+                doc.first
+            )
+            ==
+            documents.end())
+            {
+                documents.push_back(doc.first);
+            }
+
+        }
+
     }
 
 
 
 
-    for(auto &doc : global_index[word])
+    for(string doc:documents)
     {
 
-        result.push_back({
 
-            doc.first,
+        int count =
+        phraseMatchCount(
+            phrase,
+            doc
+        );
 
-            (int)doc.second.size()
 
-        });
+
+        if(count>0)
+        {
+
+            result.push_back(
+            {
+                doc,
+                (double)count
+            });
+
+        }
+
 
     }
 
@@ -245,10 +248,9 @@ SearchEngine::searchWord(string word)
         result.begin(),
         result.end(),
 
-        [](auto &a, auto &b){
-
-            return a.second > b.second;
-
+        [](auto&a,auto&b)
+        {
+            return a.second>b.second;
         }
 
     );
@@ -256,6 +258,7 @@ SearchEngine::searchWord(string word)
 
 
     return result;
+
 
 }
 
@@ -270,10 +273,12 @@ SearchEngine::searchWord(string word)
 int SearchEngine::phraseMatchCount(
     string phrase,
     string filename
-){
+)
+{
 
 
     stringstream ss(phrase);
+
 
 
     vector<string> words;
@@ -283,13 +288,14 @@ int SearchEngine::phraseMatchCount(
 
 
 
-    while(ss >> temp)
+    while(ss>>temp)
     {
+
         words.push_back(
             normalize(temp)
         );
-    }
 
+    }
 
 
 
@@ -298,20 +304,21 @@ int SearchEngine::phraseMatchCount(
 
 
 
-    int count = 0;
+    int count=0;
 
 
 
 
-    for(int pos : global_index[words[0]][filename])
+    for(int pos:
+        global_index[words[0]][filename])
     {
 
 
-        bool match = true;
+        bool match=true;
 
 
-        int current = pos;
 
+        int current=pos;
 
 
 
@@ -319,15 +326,15 @@ int SearchEngine::phraseMatchCount(
         {
 
 
-            vector<int> &next =
-                global_index[words[i]][filename];
+            auto &next =
+            global_index[words[i]][filename];
 
 
 
             if(!binarySearch(
-                    next,
-                    current+1
-                ))
+                next,
+                current+1
+            ))
             {
 
                 match=false;
@@ -362,69 +369,44 @@ int SearchEngine::phraseMatchCount(
 
 
 
-vector<pair<string,int>>
-SearchEngine::searchPhrase(string phrase)
+bool SearchEngine::binarySearch(
+    vector<int>& positions,
+    int target
+)
 {
 
 
-    vector<pair<string,int>> result;
+    int l=0;
+
+    int r=positions.size()-1;
 
 
 
-    for(auto &word : global_index)
+    while(l<=r)
     {
 
 
-        for(auto &doc : word.second)
-        {
-
-
-            int freq =
-                phraseMatchCount(
-                    phrase,
-                    doc.first
-                );
+        int mid=(l+r)/2;
 
 
 
-            if(freq > 0)
-            {
-
-                result.push_back({
-
-                    doc.first,
-
-                    freq
-
-                });
+        if(positions[mid]==target)
+            return true;
 
 
-                break;
 
-            }
+        else if(positions[mid]<target)
+            l=mid+1;
 
-        }
+
+        else
+            r=mid-1;
+
 
     }
 
 
-
-
-    sort(
-        result.begin(),
-        result.end(),
-
-        [](auto &a, auto &b){
-
-            return a.second > b.second;
-
-        }
-
-    );
-
-
-
-    return result;
+    return false;
 
 }
 
@@ -436,10 +418,10 @@ SearchEngine::searchPhrase(string phrase)
 
 
 
-void SearchEngine::autocomplete(string word)
+void SearchEngine::autocomplete(string prefix)
 {
 
-    trie->autocomplete(word);
+    trie->autocomplete(prefix);
 
 }
 
@@ -454,9 +436,52 @@ void SearchEngine::autocomplete(string word)
 unordered_map<
 string,
 unordered_map<string,vector<int>>
->& SearchEngine::getIndex()
+>&
+
+SearchEngine::getIndex()
 {
 
     return global_index;
+
+}
+
+
+
+
+
+
+
+
+vector<string>
+SearchEngine::getDocuments()
+{
+
+    vector<string> docs;
+
+
+
+    for(auto &word:global_index)
+    {
+
+        for(auto &doc:word.second)
+        {
+
+            if(find(
+                docs.begin(),
+                docs.end(),
+                doc.first
+            )
+            ==
+            docs.end())
+            {
+                docs.push_back(doc.first);
+            }
+
+        }
+
+    }
+
+
+    return docs;
 
 }

@@ -1,0 +1,1202 @@
+intriguing
+documents\sample4.txt 1 174 
+#
+both
+documents\sample4.txt 1 173 
+#
+mix
+documents\sample4.txt 1 166 
+#
+hearts
+documents\sample4.txt 1 164 
+#
+modern
+documents\sample4.txt 1 152 
+#
+beings
+documents\sample4.txt 1 150 
+#
+temples
+documents\sample4.txt 1 141 
+#
+meaning
+documents\sample4.txt 1 138 
+#
+own
+documents\sample4.txt 1 137 
+#
+its
+documents\sample4.txt 1 136 
+#
+gestures
+documents\sample4.txt 1 132 
+#
+regulate
+documents\sample4.txt 1 117 
+#
+stay
+documents\sample4.txt 1 114 
+#
+helps
+documents\sample4.txt 1 112 
+#
+spend
+documents\sample4.txt 1 103 
+#
+mystery
+documents\sample4.txt 1 101 
+#
+sense
+documents\sample4.txt 1 81 
+#
+seeking
+documents\sample4.txt 1 65 
+#
+affectionate
+documents\sample4.txt 1 64 
+#
+being
+documents\sample4.txt 1 59 
+#
+reflexes
+documents\sample4.txt 1 54 
+#
+movement
+documents\sample4.txt 1 51 
+#
+silent
+documents\sample4.txt 1 50 
+#
+capable
+documents\sample4.txt 1 48 
+#
+9,000
+documents\sample4.txt 1 34 
+#
+over
+documents\sample4.txt 1 33 
+#
+friends
+documents\sample3.txt 1 183 
+#
+humanity’s
+documents\sample3.txt 1 180 
+#
+loyalty
+documents\sample3.txt 1 170 
+#
+joyful
+documents\sample3.txt 1 167 
+#
+making
+documents\sample3.txt 1 162 
+#
+you
+documents\sample3.txt 1 151 
+#
+beside
+documents\sample3.txt 1 150 
+#
+window
+documents\sample3.txt 1 146 
+#
+they’re
+documents\sample4.txt 1 155 
+documents\sample3.txt 1 135 
+#
+thoughtful
+documents\sample3.txt 1 132 
+#
+respond
+documents\sample3.txt 1 129 
+#
+relaxation
+documents\sample3.txt 1 118 
+#
+associated
+documents\sample3.txt 1 114 
+#
+cat’s
+documents\sample3.txt 1 110 
+#
+sound
+documents\sample3.txt 1 107 
+#
+households
+documents\sample3.txt 1 104 
+#
+peace
+documents\sample3.txt 1 101 
+#
+just
+documents\sample3.txt 1 92 
+#
+comfort
+documents\sample4.txt 1 85 
+documents\sample3.txt 1 116 
+documents\sample1.txt 1 169 
+#
+personalities
+documents\sample3.txt 1 12 
+documents\sample1.txt 1 153 
+#
+family
+documents\sample4.txt 1 157 
+#
+charm
+documents\sample3.txt 2 26 173 
+documents\sample4.txt 1 93 
+documents\sample2.txt 1 187 
+#
+unique
+documents\sample3.txt 1 87 
+documents\sample2.txt 1 162 
+documents\sample1.txt 1 152 
+#
+express
+documents\sample1.txt 1 146 
+#
+allowing
+documents\sample1.txt 1 143 
+#
+yet
+documents\sample3.txt 1 40 
+#
+elegance
+documents\sample4.txt 1 14 
+#
+markings
+documents\sample1.txt 1 142 
+#
+up
+documents\sample3.txt 1 149 
+documents\sample2.txt 1 167 
+#
+adapted
+documents\sample3.txt 1 42 
+#
+gentle
+documents\sample4.txt 1 76 
+documents\sample3.txt 1 106 
+#
+incredibly
+documents\sample3.txt 1 66 
+#
+than
+documents\sample3.txt 1 91 
+#
+vocalizations
+documents\sample1.txt 1 139 
+#
+land
+documents\sample2.txt 1 81 
+#
+home
+documents\sample4.txt 1 88 
+documents\sample2.txt 1 184 
+documents\sample1.txt 1 133 
+#
+sharp
+documents\sample3.txt 1 17 
+documents\sample4.txt 1 39 
+documents\sample2.txt 1 22 
+#
+people
+documents\sample3.txt 1 29 
+documents\sample2.txt 1 57 
+#
+considered
+documents\sample1.txt 1 126 
+#
+relatives
+documents\sample2.txt 1 49 
+#
+seen
+documents\sample2.txt 1 146 
+#
+revered
+documents\sample1.txt 1 116 
+#
+them
+documents\sample3.txt 2 86 177 
+documents\sample4.txt 2 113 172 
+documents\sample2.txt 2 92 193 
+documents\sample1.txt 3 69 144 159 
+#
+catus
+documents\sample4.txt 1 25 
+documents\sample2.txt 1 39 
+#
+egypt
+documents\sample4.txt 1 143 
+documents\sample1.txt 1 113 
+#
+ancient
+documents\sample4.txt 1 140 
+documents\sample1.txt 1 112 
+#
+hold
+documents\sample1.txt 2 103 180 
+#
+aloof
+documents\sample4.txt 1 60 
+#
+body
+documents\sample4.txt 2 119 131 
+documents\sample2.txt 1 127 
+documents\sample1.txt 1 137 
+#
+often
+documents\sample3.txt 1 113 
+documents\sample2.txt 3 60 103 145 
+documents\sample1.txt 1 58 
+#
+relationship
+documents\sample2.txt 1 55 
+#
+societies
+documents\sample1.txt 1 110 
+#
+cultural
+documents\sample1.txt 1 104 
+#
+beyond
+documents\sample2.txt 1 109 
+documents\sample1.txt 1 97 
+#
+significant
+documents\sample4.txt 1 105 
+#
+this
+documents\sample2.txt 1 105 
+#
+role
+documents\sample1.txt 1 99 
+#
+bodies
+documents\sample4.txt 1 43 
+#
+snuggling
+documents\sample1.txt 1 96 
+#
+members
+documents\sample4.txt 1 158 
+#
+been
+documents\sample4.txt 1 28 
+documents\sample1.txt 1 8 
+#
+flick
+documents\sample2.txt 1 131 
+#
+even
+documents\sample2.txt 1 95 
+documents\sample1.txt 1 118 
+#
+head-butting
+documents\sample1.txt 1 94 
+#
+seem
+documents\sample2.txt 1 79 
+#
+purring
+documents\sample4.txt 1 74 
+documents\sample1.txt 1 93 
+#
+many
+documents\sample3.txt 1 103 
+documents\sample4.txt 1 61 
+documents\sample2.txt 2 44 150 
+documents\sample1.txt 1 109 
+#
+affection
+documents\sample3.txt 1 84 
+documents\sample4.txt 1 170 
+documents\sample2.txt 1 160 
+documents\sample1.txt 1 91 
+#
+endearing
+documents\sample4.txt 1 176 
+#
+with
+documents\sample3.txt 5 13 46 54 83 115 
+documents\sample4.txt 1 135 
+documents\sample2.txt 2 46 56 
+documents\sample1.txt 1 87 
+#
+by
+documents\sample1.txt 1 10 
+#
+place
+documents\sample1.txt 1 183 
+#
+through
+documents\sample4.txt 1 124 
+documents\sample2.txt 1 122 
+documents\sample1.txt 2 92 136 
+#
+enjoy
+documents\sample3.txt 1 49 
+#
+can
+documents\sample4.txt 1 78 
+documents\sample2.txt 1 71 
+documents\sample1.txt 1 83 
+#
+offering
+documents\sample1.txt 1 90 
+#
+have
+documents\sample3.txt 3 23 95 157 
+documents\sample4.txt 1 27 
+documents\sample2.txt 3 7 51 191 
+documents\sample1.txt 1 7 
+#
+sparking
+documents\sample1.txt 1 173 
+#
+streak
+documents\sample1.txt 1 81 
+#
+continue
+documents\sample4.txt 1 160 
+documents\sample3.txt 1 174 
+documents\sample1.txt 1 178 
+#
+toy
+documents\sample2.txt 1 176 
+#
+small
+documents\sample3.txt 1 55 
+documents\sample1.txt 1 3 
+#
+mice
+documents\sample1.txt 1 75 
+#
+felis
+documents\sample4.txt 1 24 
+documents\sample2.txt 1 38 
+#
+pests
+documents\sample1.txt 1 73 
+#
+creatures
+documents\sample3.txt 1 4 
+documents\sample4.txt 1 97 
+documents\sample2.txt 1 119 
+documents\sample1.txt 1 161 
+#
+domesticated
+documents\sample3.txt 1 33 
+documents\sample2.txt 1 32 
+documents\sample1.txt 1 9 
+#
+as
+documents\sample4.txt 1 148 
+documents\sample2.txt 1 147 
+documents\sample1.txt 1 100 
+#
+each
+documents\sample4.txt 1 134 
+#
+worldwide
+documents\sample1.txt 1 33 
+#
+is
+documents\sample3.txt 1 112 
+#
+companionship
+documents\sample4.txt 1 68 
+documents\sample1.txt 1 171 
+#
+and
+documents\sample3.txt 7 10 19 57 117 128 165 171 
+documents\sample4.txt 12 16 26 41 52 67 75 84 100 116 130 169 175 
+documents\sample2.txt 12 24 40 67 77 89 99 117 125 158 180 188 198 
+documents\sample1.txt 12 22 42 65 76 95 105 117 140 155 164 170 175 
+#
+exploring
+documents\sample3.txt 1 50 
+#
+independent
+documents\sample1.txt 2 23 80 
+#
+for
+documents\sample3.txt 1 6 
+documents\sample4.txt 4 12 32 37 58 
+documents\sample2.txt 3 11 18 62 
+documents\sample1.txt 3 12 17 166 
+#
+strong
+documents\sample2.txt 1 153 
+documents\sample1.txt 1 85 
+#
+which
+documents\sample4.txt 1 111 
+documents\sample1.txt 1 67 
+#
+symbolic
+documents\sample1.txt 1 106 
+#
+insects
+documents\sample1.txt 1 77 
+#
+persian
+documents\sample1.txt 1 53 
+#
+observant
+documents\sample3.txt 1 121 
+#
+purr
+documents\sample3.txt 1 111 
+#
+to
+documents\sample3.txt 5 44 61 80 102 175 
+documents\sample4.txt 6 21 30 86 91 151 161 
+documents\sample2.txt 7 27 29 35 80 135 155 182 
+documents\sample1.txt 5 50 145 162 172 179 
+#
+observe
+documents\sample1.txt 1 163 
+#
+playful
+documents\sample4.txt 1 17 
+documents\sample2.txt 1 101 
+documents\sample1.txt 1 60 
+#
+learn
+documents\sample3.txt 1 124 
+#
+despite
+documents\sample4.txt 1 55 
+documents\sample1.txt 1 78 
+#
+scent
+documents\sample1.txt 1 141 
+#
+though
+documents\sample2.txt 1 41 
+#
+nap
+documents\sample3.txt 1 62 
+#
+cultures
+documents\sample2.txt 1 197 
+documents\sample1.txt 1 123 
+#
+one
+documents\sample3.txt 1 178 
+documents\sample1.txt 1 27 
+#
+addition
+documents\sample4.txt 1 90 
+#
+natural
+documents\sample3.txt 1 25 
+documents\sample2.txt 1 106 
+documents\sample1.txt 1 56 
+#
+sleek
+documents\sample3.txt 1 15 
+documents\sample1.txt 1 48 
+#
+long
+documents\sample3.txt 1 154 
+#
+felines
+documents\sample3.txt 1 39 
+#
+ranging
+documents\sample1.txt 1 45 
+#
+companions
+documents\sample3.txt 1 93 
+documents\sample4.txt 2 29 177 
+documents\sample2.txt 1 195 
+documents\sample1.txt 1 101 
+#
+pets
+documents\sample3.txt 1 89 
+documents\sample1.txt 1 32 
+#
+cats
+documents\sample3.txt 5 1 34 63 94 156 
+documents\sample4.txt 6 1 44 62 94 121 159 
+documents\sample2.txt 6 1 33 58 113 151 177 
+documents\sample1.txt 6 1 25 54 102 134 177 
+#
+sacred
+documents\sample4.txt 1 149 
+#
+remarkable
+documents\sample2.txt 1 25 
+#
+controlling
+documents\sample1.txt 1 72 
+#
+known
+documents\sample3.txt 1 5 
+documents\sample4.txt 1 36 
+documents\sample2.txt 1 17 
+documents\sample1.txt 1 16 
+#
+way
+documents\sample3.txt 1 160 
+#
+fascinates
+documents\sample3.txt 1 28 
+#
+bonds
+documents\sample1.txt 1 86 
+#
+combination
+documents\sample4.txt 1 126 
+#
+expressive
+documents\sample2.txt 1 116 
+#
+soft
+documents\sample4.txt 1 73 
+documents\sample3.txt 1 20 
+#
+humans
+documents\sample3.txt 1 47 
+documents\sample4.txt 1 31 
+documents\sample2.txt 1 10 
+documents\sample1.txt 1 11 
+#
+where
+documents\sample4.txt 2 144 154 
+#
+displaying
+documents\sample1.txt 1 59 
+#
+playfully
+documents\sample3.txt 1 136 
+#
+human
+documents\sample4.txt 1 163 
+documents\sample1.txt 1 185 
+#
+or
+documents\sample3.txt 1 147 
+documents\sample2.txt 1 172 
+documents\sample1.txt 2 129 149 
+#
+wild
+documents\sample3.txt 1 38 
+documents\sample2.txt 1 48 
+#
+thousands
+documents\sample2.txt 1 12 
+documents\sample1.txt 1 13 
+#
+flexible
+documents\sample4.txt 1 42 
+#
+hunters
+documents\sample4.txt 1 47 
+documents\sample2.txt 1 94 
+documents\sample1.txt 1 57 
+#
+are
+documents\sample3.txt 4 2 35 64 120 
+documents\sample4.txt 4 2 45 63 95 
+documents\sample2.txt 5 2 16 59 114 144 
+documents\sample1.txt 4 2 26 55 125 
+#
+like
+documents\sample1.txt 1 74 
+#
+mimics
+documents\sample2.txt 1 104 
+documents\sample1.txt 1 63 
+#
+admired
+documents\sample4.txt 1 11 
+documents\sample2.txt 1 61 
+#
+agility
+documents\sample2.txt 1 68 
+documents\sample1.txt 1 19 
+#
+solitary
+documents\sample2.txt 1 148 
+#
+years
+documents\sample4.txt 1 35 
+documents\sample2.txt 1 14 
+documents\sample1.txt 1 15 
+#
+fascinating
+documents\sample4.txt 1 96 
+documents\sample1.txt 1 160 
+#
+species
+documents\sample4.txt 1 23 
+documents\sample2.txt 1 37 
+#
+across
+documents\sample3.txt 1 30 
+documents\sample2.txt 1 196 
+#
+language
+documents\sample2.txt 1 128 
+documents\sample1.txt 1 138 
+#
+were
+documents\sample4.txt 1 146 
+documents\sample1.txt 1 115 
+#
+warmth
+documents\sample4.txt 1 66 
+documents\sample2.txt 1 179 
+#
+care
+documents\sample1.txt 1 165 
+#
+intelligence
+documents\sample3.txt 1 9 
+documents\sample1.txt 1 154 
+#
+the
+documents\sample3.txt 3 31 105 142 
+documents\sample4.txt 3 4 9 22 
+documents\sample2.txt 3 36 130 136 
+documents\sample1.txt 4 29 47 51 132 
+#
+different
+documents\sample2.txt 1 30 
+#
+keen
+documents\sample2.txt 1 87 
+documents\sample1.txt 1 20 
+#
+soothing
+documents\sample3.txt 1 97 
+#
+make
+documents\sample3.txt 1 176 
+documents\sample2.txt 1 91 
+documents\sample1.txt 1 158 
+#
+senses
+documents\sample4.txt 1 40 
+documents\sample1.txt 1 21 
+#
+intelligent
+documents\sample2.txt 1 4 
+#
+worshipped
+documents\sample4.txt 1 147 
+documents\sample1.txt 1 119 
+#
+capture
+documents\sample4.txt 1 162 
+#
+temperature
+documents\sample4.txt 1 120 
+#
+behavior
+documents\sample2.txt 1 102 
+documents\sample1.txt 1 61 
+#
+come
+documents\sample1.txt 1 35 
+#
+hunting
+documents\sample2.txt 1 107 
+#
+carnivorous
+documents\sample1.txt 1 4 
+#
+cherished
+documents\sample4.txt 1 156 
+documents\sample3.txt 1 182 
+#
+they’ve
+documents\sample3.txt 1 41 
+#
+breeds
+documents\sample1.txt 1 40 
+#
+ability
+documents\sample3.txt 1 79 
+documents\sample2.txt 1 26 
+#
+popular
+documents\sample1.txt 1 31 
+#
+they
+documents\sample3.txt 3 22 48 119 
+documents\sample4.txt 3 19 102 145 
+documents\sample2.txt 6 15 42 50 70 120 143 
+documents\sample1.txt 4 34 82 114 124 
+#
+variety
+documents\sample1.txt 1 38 
+#
+colors
+documents\sample1.txt 1 41 
+#
+some
+documents\sample1.txt 1 122 
+#
+communicate
+documents\sample4.txt 1 123 
+documents\sample2.txt 1 121 
+documents\sample1.txt 1 135 
+#
+enchanting
+documents\sample3.txt 1 3 
+#
+curiously
+documents\sample3.txt 1 140 
+#
+siamese
+documents\sample1.txt 1 49 
+#
+patterns
+documents\sample1.txt 1 44 
+#
+makes
+documents\sample4.txt 1 171 
+documents\sample3.txt 1 85 
+documents\sample1.txt 1 68 
+#
+demeanor
+documents\sample1.txt 1 157 
+#
+good
+documents\sample1.txt 1 127 
+#
+in
+documents\sample3.txt 1 130 
+documents\sample4.txt 2 8 89 
+documents\sample2.txt 3 96 161 168 
+documents\sample1.txt 5 36 108 111 121 184 
+#
+calm
+documents\sample4.txt 1 83 
+#
+from
+documents\sample3.txt 1 144 
+documents\sample4.txt 2 69 139 
+documents\sample2.txt 1 129 
+documents\sample1.txt 2 46 167 
+#
+curiosity
+documents\sample1.txt 2 147 174 
+#
+fluffy
+documents\sample1.txt 1 52 
+#
+providing
+documents\sample1.txt 1 168 
+#
+generations
+documents\sample2.txt 1 199 
+#
+developed
+documents\sample2.txt 1 52 
+#
+pouncing
+documents\sample1.txt 1 66 
+#
+luck
+documents\sample1.txt 1 128 
+#
+habits
+documents\sample2.txt 1 66 
+#
+stalking
+documents\sample1.txt 1 64 
+#
+caution
+documents\sample1.txt 1 150 
+#
+excellent
+documents\sample4.txt 1 46 
+documents\sample1.txt 1 70 
+#
+owners
+documents\sample4.txt 1 71 
+documents\sample2.txt 1 157 
+documents\sample1.txt 1 89 
+#
+purrs
+documents\sample4.txt 1 129 
+documents\sample2.txt 1 123 
+#
+owner’s
+documents\sample3.txt 1 126 
+#
+subtle
+documents\sample3.txt 1 131 
+documents\sample2.txt 1 126 
+#
+special
+documents\sample3.txt 1 159 
+documents\sample1.txt 1 182 
+#
+made
+documents\sample2.txt 1 192 
+#
+brings
+documents\sample3.txt 1 100 
+#
+protectors
+documents\sample1.txt 1 130 
+#
+life
+documents\sample3.txt 2 45 163 
+documents\sample1.txt 1 186 
+#
+feet
+documents\sample2.txt 1 85 
+#
+quiet
+documents\sample3.txt 1 169 
+documents\sample2.txt 1 163 
+#
+significance
+documents\sample1.txt 1 107 
+#
+fur
+documents\sample3.txt 1 21 
+#
+warmer
+documents\sample3.txt 1 164 
+#
+instincts
+documents\sample2.txt 1 23 
+#
+graceful
+documents\sample2.txt 1 3 
+#
+grooming
+documents\sample3.txt 1 76 
+documents\sample4.txt 1 110 
+documents\sample2.txt 1 65 
+#
+animals
+documents\sample3.txt 2 68 122 
+documents\sample4.txt 1 7 
+documents\sample2.txt 2 5 149 
+#
+lived
+documents\sample2.txt 1 8 
+#
+alongside
+documents\sample2.txt 1 9 
+#
+curious
+documents\sample2.txt 1 20 
+#
+homes
+documents\sample4.txt 1 153 
+#
+instinct
+documents\sample2.txt 1 108 
+#
+adapt
+documents\sample2.txt 1 28 
+#
+most
+documents\sample4.txt 1 5 
+documents\sample3.txt 1 181 
+documents\sample1.txt 1 30 
+#
+environments
+documents\sample2.txt 1 31 
+#
+belong
+documents\sample4.txt 1 20 
+documents\sample2.txt 1 34 
+#
+skilled
+documents\sample2.txt 1 93 
+#
+grace
+documents\sample3.txt 1 8 
+#
+traits
+documents\sample2.txt 1 45 
+#
+tail
+documents\sample2.txt 1 134 
+#
+world
+documents\sample4.txt 1 10 
+documents\sample3.txt 2 32 143 
+#
+close
+documents\sample2.txt 1 54 
+#
+always
+documents\sample2.txt 1 78 
+#
+mammals
+documents\sample1.txt 1 5 
+#
+independence
+documents\sample3.txt 1 82 
+documents\sample4.txt 2 15 168 
+documents\sample2.txt 1 64 
+#
+—
+documents\sample4.txt 1 133 
+documents\sample2.txt 1 69 
+#
+playing
+documents\sample3.txt 1 53 
+#
+of
+documents\sample3.txt 5 37 73 108 161 179 
+documents\sample4.txt 7 49 82 98 107 127 142 167 
+documents\sample2.txt 2 13 132 
+documents\sample1.txt 4 14 28 39 131 
+#
+leap
+documents\sample2.txt 1 72 
+#
+several
+documents\sample2.txt 1 73 
+#
+habit
+documents\sample4.txt 1 99 
+#
+times
+documents\sample2.txt 1 74 
+#
+height
+documents\sample2.txt 1 76 
+#
+a
+documents\sample3.txt 8 24 70 96 109 138 145 153 158 
+documents\sample4.txt 3 80 104 125 
+documents\sample2.txt 4 53 133 169 175 
+documents\sample1.txt 2 37 181 
+#
+softly
+documents\sample2.txt 1 82 
+#
+quick
+documents\sample4.txt 1 53 
+#
+spots
+documents\sample3.txt 1 60 
+#
+nature
+documents\sample4.txt 1 18 
+documents\sample2.txt 1 21 
+documents\sample1.txt 1 24 
+#
+on
+documents\sample2.txt 1 83 
+#
+eyesight
+documents\sample2.txt 1 88 
+#
+watching
+documents\sample3.txt 1 141 
+#
+hearing
+documents\sample2.txt 1 90 
+#
+attachments
+documents\sample2.txt 1 154 
+#
+contentment
+documents\sample1.txt 1 148 
+#
+low
+documents\sample2.txt 1 97 
+#
+light
+documents\sample2.txt 1 98 
+#
+part
+documents\sample4.txt 1 106 
+documents\sample3.txt 1 72 
+#
+at
+documents\sample1.txt 1 71 
+#
+abilities
+documents\sample2.txt 1 112 
+#
+while
+documents\sample2.txt 1 142 
+documents\sample1.txt 1 120 
+#
+deeply
+documents\sample2.txt 1 115 
+#
+emotional
+documents\sample2.txt 1 118 
+#
+clean
+documents\sample4.txt 1 115 
+documents\sample3.txt 1 67 
+#
+meows
+documents\sample4.txt 1 128 
+documents\sample2.txt 1 124 
+#
+share
+documents\sample2.txt 1 43 
+#
+slow
+documents\sample2.txt 1 137 
+#
+signals
+documents\sample2.txt 1 140 
+#
+trust
+documents\sample2.txt 1 141 
+#
+their
+documents\sample3.txt 7 7 14 51 74 78 125 168 
+documents\sample4.txt 9 13 38 56 70 72 92 108 118 165 
+documents\sample2.txt 10 19 47 63 75 84 86 100 110 156 185 
+documents\sample1.txt 5 18 79 88 98 151 
+#
+show
+documents\sample2.txt 1 159 
+#
+day
+documents\sample4.txt 1 109 
+documents\sample3.txt 2 75 155 
+#
+ways
+documents\sample3.txt 1 133 
+documents\sample2.txt 1 164 
+#
+blink
+documents\sample2.txt 1 138 
+#
+whether
+documents\sample3.txt 1 134 
+documents\sample2.txt 1 165 
+#
+string
+documents\sample3.txt 1 139 
+#
+curling
+documents\sample3.txt 1 148 
+documents\sample2.txt 1 166 
+#
+sunny
+documents\sample2.txt 1 170 
+#
+spot
+documents\sample2.txt 1 171 
+#
+themselves
+documents\sample3.txt 1 77 
+#
+chasing
+documents\sample3.txt 1 137 
+documents\sample2.txt 1 173 
+#
+after
+documents\sample3.txt 1 152 
+documents\sample2.txt 1 174 
+#
+bring
+documents\sample4.txt 1 79 
+documents\sample2.txt 1 178 
+#
+any
+documents\sample4.txt 1 87 
+documents\sample2.txt 1 183 
+#
+calming
+documents\sample2.txt 1 189 
+#
+joy
+documents\sample1.txt 1 176 
+#
+presence
+documents\sample3.txt 1 98 
+documents\sample4.txt 1 77 
+documents\sample2.txt 1 190 
+#
+coat
+documents\sample1.txt 1 43 
+#
+movements
+documents\sample3.txt 1 16 
+#
+eyes
+documents\sample3.txt 1 18 
+#
+personality
+documents\sample2.txt 1 181 
+#
+descendants
+documents\sample3.txt 1 36 
+#
+perfectly
+documents\sample3.txt 1 43 
+#
+mysterious
+documents\sample3.txt 2 11 172 
+documents\sample2.txt 1 186 
+documents\sample1.txt 1 156 
+#
+surroundings
+documents\sample3.txt 1 52 
+#
+objects
+documents\sample3.txt 1 56 
+#
+finding
+documents\sample3.txt 1 58 
+#
+reputation
+documents\sample4.txt 1 57 
+#
+cozy
+documents\sample3.txt 1 59 
+#
+physical
+documents\sample2.txt 1 111 
+#
+also
+documents\sample4.txt 1 122 
+documents\sample3.txt 1 65 
+#
+form
+documents\sample2.txt 1 152 
+documents\sample1.txt 1 84 
+#
+spending
+documents\sample3.txt 1 69 
+#
+large
+documents\sample3.txt 1 71 
+#
+routines
+documents\sample3.txt 1 127 
+#
+that
+documents\sample3.txt 3 27 99 123 
+documents\sample2.txt 2 6 139 
+documents\sample1.txt 2 6 62 
+#
+balance
+documents\sample3.txt 1 81 
+#
+among
+documents\sample4.txt 1 3 
+documents\sample3.txt 1 88 
+#
+beloved
+documents\sample4.txt 1 6 
+documents\sample2.txt 1 194 
+#
+more
+documents\sample3.txt 2 90 166 
+#

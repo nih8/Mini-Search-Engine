@@ -1,15 +1,16 @@
-#include <bits/stdc++.h>
-
 #include "search_engine.h"
-#include "ranker.h"
+
 #include "storage.h"
+#include <bits/stdc++.h>
+#include <iostream>
 
 
 using namespace std;
 
 
 
-int main(){
+int main()
+{
 
 
     SearchEngine engine;
@@ -20,70 +21,22 @@ int main(){
 
 
     engine.loadDocuments(
-        "./documents"
+        "documents"
     );
 
 
-    cout<<"Documents loaded!\n";
 
+    cout<<"Index created successfully\n";
 
-
-    /*
-        Prepare document data
-        for TF-IDF ranking
-    */
-
-
-    unordered_map<string,vector<string>> documents;
-
-
-
-    auto &index =
-        engine.getIndex();
-
-
-
-    for(auto &wordEntry:index)
-    {
-
-        string word =
-            wordEntry.first;
-
-
-
-        for(auto &docEntry:
-            wordEntry.second)
-        {
-
-
-            string filename =
-                docEntry.first;
-
-
-
-            int frequency =
-                docEntry.second.size();
-
-
-
-            for(int i=0;i<frequency;i++)
-            {
-
-                documents[filename]
-                .push_back(word);
-
-            }
-
-        }
-
-    }
-
-
-
-    Ranker ranker(documents);
 
 
     Storage storage;
+
+
+    storage.saveIndex(
+        engine.getIndex()
+    );
+
 
 
 
@@ -92,15 +45,16 @@ int main(){
     {
 
 
-        cout<<"\n====================\n";
+        cout<<"\n===== MINI SEARCH ENGINE =====\n";
+
 
         cout<<"1. Search Word\n";
-        cout<<"2. Search Phrase\n";
-        cout<<"3. Autocomplete\n";
-        cout<<"4. TF-IDF Ranked Search\n";
-        cout<<"5. Save Index\n";
-        cout<<"6. Exit\n";
 
+        cout<<"2. Search Phrase\n";
+
+        cout<<"3. Autocomplete\n";
+
+        cout<<"4. Exit\n";
 
         cout<<"Choice: ";
 
@@ -110,72 +64,59 @@ int main(){
 
         cin>>choice;
 
+
         cin.ignore();
 
 
 
-        if(choice==6)
+
+
+        if(choice==4)
             break;
 
 
 
 
-        // -------------------------
-        // WORD SEARCH
-        // -------------------------
 
         if(choice==1)
         {
 
 
-            string word;
+            string query;
 
 
             cout<<"Enter word: ";
 
-            getline(cin,word);
+            getline(cin,query);
+
 
 
 
             auto result =
-            engine.searchWord(word);
+            engine.searchWord(query);
 
 
 
-            if(result.empty())
+
+            for(auto &x:result)
             {
 
-                cout<<"No matches found\n";
+                cout
+                <<x.first
+                <<" score: "
+                <<x.second
+                <<endl;
 
             }
 
-            else
-            {
 
-                cout<<"\nResults:\n";
-
-
-                for(auto &r:result)
-                {
-
-                    cout
-                    <<r.first
-                    <<" -> "
-                    <<r.second
-                    <<" occurrences\n";
-
-                }
-
-            }
 
         }
 
 
 
 
-        // -------------------------
-        // PHRASE SEARCH
-        // -------------------------
+
 
         else if(choice==2)
         {
@@ -190,6 +131,7 @@ int main(){
 
 
 
+
             auto result =
             engine.searchPhrase(
                 phrase
@@ -197,145 +139,45 @@ int main(){
 
 
 
-            if(result.empty())
+
+            for(auto &x:result)
             {
 
-                cout<<"No matches found\n";
+                cout
+                <<x.first
+                <<" score: "
+                <<x.second
+                <<endl;
+
 
             }
 
-            else
-            {
-
-                cout<<"\nPhrase Results:\n";
-
-
-                for(auto &r:result)
-                {
-
-                    cout
-                    <<r.first
-                    <<" -> "
-                    <<r.second
-                    <<" times\n";
-
-                }
-
-            }
 
         }
 
 
 
 
-        // -------------------------
-        // AUTOCOMPLETE
-        // -------------------------
+
+
 
         else if(choice==3)
         {
 
 
-            string word;
+            string prefix;
 
 
-            cout<<"Enter prefix: ";
+            cout<<"Prefix: ";
 
-            cin>>word;
+            cin>>prefix;
 
 
 
-            engine.autocomplete(
-                word
-            );
+            engine.autocomplete(prefix);
+
 
         }
-
-
-
-
-        // -------------------------
-        // TF-IDF SEARCH
-        // -------------------------
-
-        else if(choice==4)
-        {
-
-
-            string query;
-
-
-            cout<<"Enter query: ";
-
-            getline(cin,query);
-
-
-
-            auto result =
-            ranker.rankDocuments(
-                query
-            );
-
-
-
-            if(result.empty())
-            {
-
-                cout<<"No relevant documents\n";
-
-            }
-
-            else
-            {
-
-                cout<<"\nRanked Results:\n";
-
-
-                for(auto &r:result)
-                {
-
-                    cout
-                    <<r.first
-                    <<" Score: "
-                    <<r.second
-                    <<endl;
-
-                }
-
-            }
-
-        }
-
-
-
-
-        // -------------------------
-        // SAVE INDEX
-        // -------------------------
-
-        else if(choice==5)
-        {
-
-
-            storage.saveIndex(
-                engine.getIndex()
-            );
-
-
-            cout
-            <<"Index saved successfully!\n";
-
-        }
-
-
-
-        else
-        {
-
-            cout<<"Invalid choice\n";
-
-        }
-
 
 
     }
